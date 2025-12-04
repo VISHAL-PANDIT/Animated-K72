@@ -4,7 +4,8 @@ import { NavbarContext, NavColorContext } from "../../context/Navcontext";
 const Navbar = () => {
   const navGreenRef = useRef<HTMLDivElement | null>(null);
   const [navOpen,setNavOpen] = useContext(NavbarContext) || [false, () => {}]
-  const [navColor, setNavColor] = useContext(NavColorContext) || [false, () => {}]
+  const [navColor,setNavColor] = useContext(NavColorContext) || [false, () => {}]
+  console.log(navOpen,setNavColor)
 
   return (
     <div>
